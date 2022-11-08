@@ -6,6 +6,7 @@ using UnityEngine.Audio;
 
 public class CharacterController2D : MonoBehaviour
 {
+	//hola
 	[Range(0, .3f)] [SerializeField] float movementSmoothing = .05f;
 	[SerializeField] float jumpForce = 400f;
 	[SerializeField] float dashSideForce = 700f;

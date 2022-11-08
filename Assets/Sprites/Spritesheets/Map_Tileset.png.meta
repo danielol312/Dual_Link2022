@@ -216,6 +216,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -224,9 +225,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -1660,6 +1661,71 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Map_Tileset_8: -5172135002202678174
+      Map_Tileset_52: -7702411147155516365
+      Map_Tileset_56: 1084164555982132285
+      Map_Tileset_63: -2709605636842701112
+      Map_Tileset_58: 4477264238922140121
+      Map_Tileset_2: -2358636289608940024
+      Map_Tileset_22: 8468527042997298511
+      Map_Tileset_48: 2828736038246878706
+      Map_Tileset_5: 3664537599845039282
+      Map_Tileset_60: 5663757970902035908
+      Map_Tileset_28: -8432004793450596406
+      Map_Tileset_21: -3950669856556252682
+      Map_Tileset_30: -1097808064433187554
+      Map_Tileset_45: 2655215889813988743
+      Map_Tileset_54: 8801755991950340051
+      Map_Tileset_43: 8933082933526113228
+      Map_Tileset_49: 3113965826031242498
+      Map_Tileset_4: 7449589089163345617
+      Map_Tileset_13: 1290184511351382121
+      Map_Tileset_0: -4704527939809824789
+      Map_Tileset_61: -1521031534442027480
+      Map_Tileset_3: -3244083087327817931
+      Map_Tileset_50: 1771985478689139307
+      Map_Tileset_40: 7088786178000866862
+      Map_Tileset_42: 2029622440645588677
+      Map_Tileset_53: -332597826371224872
+      Map_Tileset_36: -9010016481197000208
+      Map_Tileset_17: 7630460624332107142
+      Map_Tileset_34: -8357619470846525342
+      Map_Tileset_47: 6579623808140597070
+      Map_Tileset_39: -5888619183512782430
+      Map_Tileset_44: 7066147008935879208
+      Map_Tileset_35: 6020122917489319421
+      Map_Tileset_7: -1966008326933143696
+      Map_Tileset_37: -1882879910104574666
+      Map_Tileset_11: -9053363289065069857
+      Map_Tileset_31: -8888526527117859425
+      Map_Tileset_38: 4242633404008808316
+      Map_Tileset_51: 1671036150520414291
+      Map_Tileset_57: 6159952040332464239
+      Map_Tileset_32: -3344067212484119254
+      Map_Tileset_19: 7045518656470061699
+      Map_Tileset_26: 2992292435408480111
+      Map_Tileset_12: 6714170276300999903
+      Map_Tileset_41: 7917191806745525795
+      Map_Tileset_33: 4325602232246998192
+      Map_Tileset_10: -7898298431008337303
+      Map_Tileset_55: 5163597831681879442
+      Map_Tileset_16: -3674046682844691800
+      Map_Tileset_59: 5210946786208164959
+      Map_Tileset_27: -6359547665026874831
+      Map_Tileset_25: 7161242335356891180
+      Map_Tileset_15: -5173097483972496054
+      Map_Tileset_23: 4182969913862054186
+      Map_Tileset_1: -1536852316312562548
+      Map_Tileset_14: 683801459487817270
+      Map_Tileset_9: -1577087045087701589
+      Map_Tileset_18: -3121018726815203001
+      Map_Tileset_24: 2105671680350977550
+      Map_Tileset_6: 1636584869341224249
+      Map_Tileset_46: 7746666870879851646
+      Map_Tileset_20: 3191522670585585074
+      Map_Tileset_29: -6928527063054479528
+      Map_Tileset_62: 2632956107957830741
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
