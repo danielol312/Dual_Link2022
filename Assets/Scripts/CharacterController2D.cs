@@ -17,6 +17,8 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] Transform ceilingCheck;
 	ParticleSystem dashPS;
 
+	private Dictionary<string, int> miInventario;
+
 	[SerializeField] AudioClip dashAudioClip, jumpAudioClip;
 	AudioSource audioSource;
 	bool hasPlayed;
@@ -31,6 +33,10 @@ public class CharacterController2D : MonoBehaviour
 
 	private void Awake()
 	{
+
+		miInventario = new Dictionary<string, int>();
+
+
 		audioSource = GetComponent<AudioSource>();
 		dashPS = GetComponentInChildren<ParticleSystem>();
 		Time.timeScale = 1;
@@ -85,4 +91,11 @@ public class CharacterController2D : MonoBehaviour
 		audioSource.PlayOneShot(dashAudioClip); hasPlayed = true;
 		yield return new WaitForSeconds(0.5f); hasPlayed = false;
 	}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Collectable"))
+        {
+			Destroy(collision.gameObject);
+        }
+    }
 }
