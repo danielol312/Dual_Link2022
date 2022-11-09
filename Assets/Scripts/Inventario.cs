@@ -11,6 +11,25 @@ public class Inventario : CharacterController2D
     {
         miInventario= new Dictionary<Item, string>();
     }
+
+
+    public void addItem(Item item)
+    {
+        //if ()
+        //{
+        //    miInventario.TryAdd(item, "blue");
+        //}
+        //else ()
+        //{
+        //    miInventario.TryAdd(item, "red");
+        //}
+
+    }
+
+
+
+
+
     //void Start()
     //{
     //    miInventario.Add("Heart", 1);

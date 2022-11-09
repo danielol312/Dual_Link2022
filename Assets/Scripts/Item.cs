@@ -13,4 +13,6 @@ public class Item : MonoBehaviour
 
     public ItemType itemtype;
     public int amount;
+    public string player;
+    internal static string Value;
 }

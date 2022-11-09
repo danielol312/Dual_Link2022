@@ -6,6 +6,7 @@ using UnityEngine.Audio;
 
 public class CharacterController2D : MonoBehaviour
 {
+	[SerializeField] private UI_Inventory ui_inventory;
 	//hola
 	[Range(0, .3f)] [SerializeField] float movementSmoothing = .05f;
 	[SerializeField] float jumpForce = 400f;
@@ -35,6 +36,7 @@ public class CharacterController2D : MonoBehaviour
 	{
 
 		miInventario = new Dictionary<string, int>();
+		//ui_inventory.SetInventory(inventario);
 
 
 		audioSource = GetComponent<AudioSource>();
@@ -96,6 +98,7 @@ public class CharacterController2D : MonoBehaviour
         if (collision.CompareTag("Collectable"))
         {
 			Destroy(collision.gameObject);
+
         }
     }
 }
