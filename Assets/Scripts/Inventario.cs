@@ -14,10 +14,14 @@ public class Inventario : MonoBehaviour
     {
         
         miInventario.Add("Heart", 1);
-        miInventario.Add("Diamond", 2);
-        miInventario.Add("Star", 3);
+        miInventario.Add("Diamond", 1);
+        miInventario.Add("Star", 1);
 
-        foreach(var item in miInventario)
+        miInventario.Add("Blue Heart", 2);
+        miInventario.Add("Blue Diamond", 2);
+        miInventario.Add("Blue Star", 2);
+
+        foreach (var item in miInventario)
         {
             inventoryDisplay.text=item.ToString();
         }
