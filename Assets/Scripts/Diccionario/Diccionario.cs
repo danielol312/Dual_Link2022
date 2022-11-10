@@ -24,11 +24,11 @@ public class Diccionario : PlayerMovement
     {
         if(myInventory.ContainsKey("Star"))
         {
-            //myInventory["Star"];
+            myInventory["Star"]++;
         }
         else
         {
-            myInventory.Add("Star", 0);
+            myInventory.Add("Star", 1);
         }
         DisplayInventory();
     }
@@ -36,11 +36,11 @@ public class Diccionario : PlayerMovement
     {
         if (myInventory.ContainsKey("Heart"))
         {
-            _ = myInventory["Star"];
+            myInventory["Heart"]++;
         }
         else
         {
-            myInventory.Add("Heart", 0);
+            myInventory.Add("Heart", 1);
         }
         DisplayInventory();
     }
@@ -48,11 +48,11 @@ public class Diccionario : PlayerMovement
     {
         if (myInventory.ContainsKey("Diamond"))
         {
-            //myInventory["Star"];
+            myInventory["Diamond"]++;
         }
         else
         {
-            myInventory.Add("Diamond", 0);
+            myInventory.Add("Diamond", 1);
         }
         DisplayInventory();
     }

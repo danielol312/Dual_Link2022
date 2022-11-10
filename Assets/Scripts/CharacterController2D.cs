@@ -93,12 +93,24 @@ public class CharacterController2D : MonoBehaviour
 		audioSource.PlayOneShot(dashAudioClip); hasPlayed = true;
 		yield return new WaitForSeconds(0.5f); hasPlayed = false;
 	}
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Collectable"))
-        {
-			Destroy(collision.gameObject);
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Collectable"))
+    //    {
+    //        if (collision.gameObject.name.Equals = ("Star"))
+    //        {
+    //            AddStar();
+    //        }
+    //        if (collision.gameObject.name.Equals = ("Diamond"))
+    //        {
+    //            AddDiamond();
+    //        }
+    //        if (collision.gameObject.name.Equals = ("Heart"))
+    //        {
+    //            addHeart();
+    //        }
+    //        Destroy(collision.gameObject);
 
-        }
-    }
+    //    }
+    //}
 }
