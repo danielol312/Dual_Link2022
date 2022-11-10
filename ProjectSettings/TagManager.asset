@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ItemSlow
+  - ItemStar
+  - ItemVelocity
+  - ItemManager
+  - QueueManager
+  - RedPlayer
+  - BluePlayer
   layers:
   - Default
   - TransparentFX

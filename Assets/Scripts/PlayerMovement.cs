@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     string horizontalAxis, jumpAxis, dashDownAxis, dashLeftAxis, dashRightAxis; 
     bool jump = false, dashDown = false, dashLeft = false, dashRight = false;
 
-    [SerializeField] float movementSpeed = 10f;
+    public float movementSpeed = 10f;
     float horizontalMovement = 0f;
 
 
