@@ -12,11 +12,20 @@ public class ObjectPooler : MonoBehaviour
         public int size;
     }
 
+    //intento de singleton
+    public static ObjectPooler Instance;
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     public List<Pool> pools;
 
     public Dictionary<string, Queue<GameObject>> poolDictionary;
 
-     void Start()
+
+
+    void Start()
     {
         poolDictionary = new Dictionary<string, Queue<GameObject>>();
 
@@ -35,12 +44,8 @@ public class ObjectPooler : MonoBehaviour
 
     }
 
-    public static ObjectPooler Instance;
 
-    private void Awake()
-    {
-        Instance = this;
-    }
+   
 
     public GameObject SpawnFromPool(string tag, Vector3 position)
     {
@@ -52,9 +57,6 @@ public class ObjectPooler : MonoBehaviour
         }
 
        GameObject objectToSpawn= poolDictionary[tag].Dequeue();
-
-
-
 
         objectToSpawn.SetActive(true);
         objectToSpawn.transform.position = position;
