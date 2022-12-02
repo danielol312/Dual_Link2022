@@ -6,6 +6,7 @@ using UnityEngine.Audio;
 
 public class CharacterController2D : MonoBehaviour
 {
+	[SerializeField] private UI_Inventory ui_inventory;
 	//hola
 	[Range(0, .3f)] [SerializeField] float movementSmoothing = .05f;
 	[SerializeField] float jumpForce = 400f;
@@ -16,6 +17,8 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] Transform groundCheck;
 	[SerializeField] Transform ceilingCheck;
 	ParticleSystem dashPS;
+
+	private Dictionary<string, int> miInventario;
 
 	[SerializeField] AudioClip dashAudioClip, jumpAudioClip;
 	AudioSource audioSource;
@@ -31,6 +34,11 @@ public class CharacterController2D : MonoBehaviour
 
 	private void Awake()
 	{
+
+		miInventario = new Dictionary<string, int>();
+		//ui_inventory.SetInventory(inventario);
+
+
 		audioSource = GetComponent<AudioSource>();
 		dashPS = GetComponentInChildren<ParticleSystem>();
 		Time.timeScale = 1;
@@ -85,4 +93,24 @@ public class CharacterController2D : MonoBehaviour
 		audioSource.PlayOneShot(dashAudioClip); hasPlayed = true;
 		yield return new WaitForSeconds(0.5f); hasPlayed = false;
 	}
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Collectable"))
+    //    {
+    //        if (collision.gameObject.name.Equals = ("Star"))
+    //        {
+    //            AddStar();
+    //        }
+    //        if (collision.gameObject.name.Equals = ("Diamond"))
+    //        {
+    //            AddDiamond();
+    //        }
+    //        if (collision.gameObject.name.Equals = ("Heart"))
+    //        {
+    //            addHeart();
+    //        }
+    //        Destroy(collision.gameObject);
+
+    //    }
+    //}
 }
